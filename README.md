@@ -32,7 +32,7 @@ Note: Dates appear as Excel serial numbers (for example `45352`); format the cel
 - Payment method distribution (card vs cash)
 - Top customers (by `card` ID) and repeat purchase behavior
 
-## Excel-only step-by-step guide (reproducible)
+## Excel data cleaning
 
 1. Open `raw data/index_coffe (1).xlsx` in Excel.
 
@@ -62,12 +62,12 @@ Note: Dates appear as Excel serial numbers (for example `45352`); format the cel
 8. Price summary and checks
 - Use formulas: `=MIN(money)`, `=MAX(money)`, `=AVERAGE(money)` to get price range and average.
 
-9. Clean & validation tips
+9. Clean & validation
 - Ensure `coffee_name` values are consistent (trim spaces, fix typos).
 - Check for duplicates and unexpected zero/negative `money` values.
 - If times/dates look incorrect, try formatting or convert text-to-columns.
 
-## Suggested next steps (after initial Excel analysis)
+## Next steps (after initial Excel analysis)
 
 - Standardize `coffee_name` values for accurate grouping.
 - Build a small dashboard sheet in Excel using PivotCharts and Slicers for interactivity.
@@ -77,5 +77,3 @@ Note: Dates appear as Excel serial numbers (for example `45352`); format the cel
 
 - raw data/index_coffe (1).xlsx — source sales data
 - dashboard/Screenshot 2026-02-09 183922.png — example dashboard visualization
-
-If you'd like, I can (1) create a sample Excel dashboard sheet with recommended PivotTables/Charts inside this workbook, or (2) walk through the exact steps while you share your screen. Which would you prefer?
